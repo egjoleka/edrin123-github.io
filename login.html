@@ -135,6 +135,7 @@
                         <div id="api">
                         </div>
                         <script>
+                            "use strict"; $(document).ready(function () {
                             console.log("running outside");
                         function addTermsOfUseLink() {
                             console.log("running within");
@@ -158,6 +159,7 @@
     termsOfUseLabel.replaceChild(termsOfUseLink, termsOfUseLabel.firstChild);
 }
                             addTermsOfUseLink();
+                            });
                         </script>
                     </div>
                 </div>
