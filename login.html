@@ -135,7 +135,9 @@
                         <div id="api">
                         </div>
                         <script>
+                            console.log("running outside");
                         function addTermsOfUseLink() {
+                            console.log("running within");
     // find the terms of use label element
     var termsOfUseLabel = document.querySelector('#api label[for="termsOfUse"]');
     if (!termsOfUseLabel) {
@@ -155,6 +157,7 @@
     // replace the label text with the new element
     termsOfUseLabel.replaceChild(termsOfUseLink, termsOfUseLabel.firstChild);
 }
+                            addTermsOfUseLink();
                         </script>
                     </div>
                 </div>
